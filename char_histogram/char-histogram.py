@@ -9,13 +9,14 @@ def char_histogram(s: str) -> dict[str, int]:
         dict[str, int]: A dictionary where keys are characters from s and 
                         values are the counts of those characters. 
     """
-    dict = {}
     
-    for char in s:
-        if char in dict:
-            dict[char] += 1
+    dict = {}
+
+    for symbol in s:
+        if symbol in dict:
+            dict[symbol] += 1
         else:
-            dict[char] = 1
+            dict[symbol] = 1
     
     return dict
-    
+
