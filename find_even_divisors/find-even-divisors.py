@@ -24,13 +24,13 @@ def find_even_divisors(n: int) -> list[int]:
     # Parameter checks
     if isinstance(n, bool) or not isinstance(n, int):
         raise ValueError("n must be an integer")
-    even_divisors = []
-    # your code here
-    if n % 2 == 1:
-        return even_divisors
 
-    for k in range (2, n+1, 2):
-        if n % 2 == 0 and n % k == 0:
+    # your code here
+
+    even_divisors = []
+
+    for k in range(2, n+1, 2):
+        if n % k == 0:
             even_divisors.append(k)
-    
+
     return even_divisors
